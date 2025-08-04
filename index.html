@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirâmide Invertida</title>
+</head>
+
+<body>
+
+
+
+    <div class="glass-cta-top">
+        <a href="https://api.whatsapp.com/send/?phone=%2B5534996812576&text=Oi%2C+fiz+a+an%C3%A1lise+do+meu+nome+e+gostaria+de+entender+melhor.&type=phone_number&app_absent=0"
+            class="glass-cta-botao" target="_blank" rel="noopener">
+            <span class="glass-cta-icone">
+                <svg width="22" height="22" viewBox="0 0 32 32" fill="#25D366" xmlns="http://www.w3.org/2000/svg"
+                    style="vertical-align:middle;margin-bottom:2px;">
+                    <circle cx="16" cy="16" r="16" fill="#25D366" />
+                    <path
+                        d="M23.483 19.353c-.376-.188-2.23-1.102-2.577-1.228-.347-.126-.6-.188-.853.188-.252.376-.98 1.228-1.2 1.48-.221.252-.447.283-.823.094-.376-.189-1.587-.584-3.024-1.86-1.119-.997-1.876-2.23-2.096-2.606-.221-.376-.024-.579.165-.767.17-.168.376-.44.565-.661.189-.221.252-.376.377-.627.126-.252.063-.47-.032-.66-.094-.189-.853-2.06-1.168-2.823-.309-.752-.623-.65-.853-.662l-.728-.012c-.236 0-.62.089-.947.417-.327.328-1.241 1.213-1.241 2.96 0 1.747 1.27 3.435 1.447 3.674.178.238 2.5 3.814 6.048 5.201.846.29 1.505.463 2.021.593.849.217 1.624.187 2.235.114.682-.08 2.23-.912 2.545-1.794.314-.882.314-1.638.221-1.794-.094-.157-.343-.251-.719-.439z"
+                        fill="#fff" />
+                </svg>
+            </span>
+            <span class="glass-cta-texto">
+                CLIQUE AQUI E FAÇA AGORA SEU ESTUDO NUMEROLÓGICO!
+            </span>
+        </a>
+    </div>
+
+
+
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pirâmide Invertida</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <!-- Coloque aqui o SEU CSS, incluindo os ajustes para responsividade do triângulo e dos cards -->
+        <style>
+            /* Seu CSS existente (resumido) */
+            * {
+                font-family: 'Lato', sans-serif;
+                outline: none !important;
+            }
+
+            body {
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                color: #7C0C23;
+                font-size: 36px !important;
+                text-align: center;
+            }
+
+            .main {
+                max-width: 700px;
+                margin: 0 auto;
+                padding: 40px 10px 20px 10px;
+            }
+
+            .input-container {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .input-container input {
+                width: 100%;
+                border: 1px solid #e6e6e6;
+                border-radius: 5px;
+                height: 44px;
+                padding: 0 10px;
+                font-size: 18px;
+            }
+
+            .input-container input:focus {
+                border-color: #7C0C23 !important;
+            }
+
+            .input-container input::placeholder {
+                font-size: 18px;
+            }
+
+            .btn {
+                background-color: #7C0C23;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+                width: 100%;
+                max-width: 400px;
+                margin: 16px auto 0 auto;
+                display: block;
+            }
+
+            @media (max-width: 600px) {
+                h1 {
+                    font-size: 24px !important;
+                }
+
+                .main {
+                    padding: 24px 2vw 8px 2vw;
+                }
+            }
+
+            /* Triângulo responsivo */
+            .resultado-triangulo-card {
+                max-width: 420px;
+                width: 98vw;
+                margin: 38px auto 20px auto;
+                background: #fff;
+                box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.09);
+                border-radius: 22px;
+                padding: 26px 10px 18px 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .resultado-titulo {
+                color: #b60018;
+                font-weight: 700;
+                font-size: 1.1rem;
+                text-align: left;
+                margin-bottom: 14px;
+                margin-top: 4px;
+                width: 100%;
+                padding-left: 6px;
+            }
+
+            #triangulo-scroll-container {
+                width: 100%;
+                max-width: 400px;
+                max-height: 200px;
+                overflow-x: auto;
+                overflow-y: auto;
+                background: #faf9fa;
+                border-radius: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                box-sizing: border-box;
+                padding: 8px 2px;
+                margin-bottom: 18px;
+            }
+
+            #triangulo-scroll-container table {
+                width: 100% !important;
+                max-width: 100% !important;
+                table-layout: fixed;
+                font-size: 1.12rem;
+                border-spacing: 0.3em 0.13em;
+                word-break: break-all;
+            }
+
+            @media (max-width: 600px) {
+                .resultado-triangulo-card {
+                    padding: 16px 2vw 8px 2vw;
+                    border-radius: 16px;
+                    max-width: 99vw;
+                }
+
+                #triangulo-scroll-container {
+                    max-width: 98vw;
+                    max-height: 30vw;
+                    min-height: 64px;
+                    padding: 3vw 1vw;
+                }
+
+                #triangulo-scroll-container table {
+                    font-size: 0.72rem !important;
+                    border-spacing: 0.07em 0.02em;
+                }
+            }
+
+            /* Cards dos resultados */
+            .resultado-titulo-principal {
+                color: #0275d8;
+                font-weight: 700;
+                font-size: 1.25rem;
+                margin-bottom: 12px;
+                text-align: left;
+            }
+
+            .resultado-boasvindas {
+                color: #222;
+                margin-bottom: 20px;
+                font-size: 1rem;
+            }
+
+            .resultado-boasvindas span {
+                color: #0275d8;
+                font-weight: 600;
+                text-transform: lowercase;
+            }
+
+            .resultado-card {
+                background: #f6f6f6;
+                border-radius: 14px;
+                padding: 16px 18px;
+                margin-bottom: 14px;
+                box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.05);
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                transition: box-shadow 0.2s;
+            }
+
+            .resultado-card:hover {
+                box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.10);
+            }
+
+            .resultado-card-titulo {
+                font-weight: bold;
+                margin-bottom: 6px;
+                color: #323232;
+                font-size: 1rem;
+            }
+
+            .resultado-card-texto {
+                font-size: 0.97rem;
+                color: #545454;
+                margin-bottom: 10px;
+            }
+
+            .resultado-card-numero {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 1.20rem;
+                font-weight: bold;
+                color: #0275d8;
+            }
+
+            .resultado-card-seta {
+                font-size: 1.5rem;
+                color: #0275d8;
+            }
+
+            /* Modal */
+            #caixa-explicacao {
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.20);
+                display: none;
+                align-items: center;
+                justify-content: center;
+                z-index: 9999;
+            }
+
+            #explicacao-conteudo {
+                background: #fff;
+                padding: 28px 24px;
+                border-radius: 18px;
+                max-width: 94vw;
+                min-width: 230px;
+                max-height: 80vh;
+                overflow-y: auto;
+                font-size: 1.01rem;
+                box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.20);
+                color: #333;
+                text-align: left;
+            }
+
+            #caixa-explicacao button {
+                margin-top: 18px;
+                background: #b60018;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                padding: 8px 22px;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Descubra as energias que seu nome carrega</h1>
+            <form onsubmit="return false;">
+                <!-- ALERTA AQUI -->
+                <div class="aviso-importante-nome">
+                    <span class="aviso-destaque">Importante:</span>
+                    Para calcular o nome na numerologia, você precisa digitar seu
+                    <span class="aviso-destaque">NOME DE NASCIMENTO</span> escrito exatamente igual está na sua
+                    certidão, e a data original
+                    (caso você não saiba o dia que nasceu, não é possível fazer o cálculo).
+                </div>
+
+                <!-- SEUS INPUTS ABAIXO -->
+                <div class="container input-container">
+                    <div class="col-sm">
+                        <input id="input-field" placeholder="Nome completo">
+                    </div>
+                    <div class="col-sm">
+                        <input name="dataNascimento" type="text" id="birthdate"
+                            placeholder="Data de nascimento (dd/mm/aaaa)">
+                    </div>
+                </div>
+                <button type="button" class="btn" onclick="mostrarResultados()">Calcular</button>
+            </form>
+
+
+            <!-- RESULTADO COMEÇA AQUI -->
+            <div id="resultados" style="display: none; margin-top:18px;">
+                <!-- Triângulo responsivo -->
+                <div class="resultado-triangulo-card">
+                    <div class="resultado-titulo">Energias que travam sua prosperidade</div>
+                    <div id="triangulo-scroll-container"></div>
+                    <div id="triangulo-texto" class="resultado-texto"></div>
+                </div>
+
+                <!-- Título principal -->
+                <div class="resultado-titulo-principal">O resultado das suas energias</div>
+                <p class="resultado-boasvindas"><span id="nome-usuario"></span>, aqui estão listadas algumas das suas
+                    energias e o significado de cada uma. <strong>Clique no número abaixo</strong> pra saber o que cada
+                    uma revela sobre você.</p>
+
+                <!-- Cards dos resultados -->
+                <div class="resultado-card" onclick="abrirExplicacao('dia')">
+                    <div class="resultado-card-titulo">Seu dia de nascimento</div>
+                    <div class="resultado-card-texto">O dia de nascimento revela muito sobre sua personalidade.</div>
+                    <div class="resultado-card-numero">
+                        <span id="numero-dia">--</span>
+                        <span class="resultado-card-seta">→</span>
+                    </div>
+                </div>
+                <div class="resultado-card" onclick="abrirExplicacao('expressao')">
+                    <div class="resultado-card-titulo">Número de Expressão</div>
+                    <div class="resultado-card-texto">A expressão representa seus dons, talentos e como o mundo te
+                        enxerga.</div>
+                    <div class="resultado-card-numero">
+                        <span id="numero-expressao">--</span>
+                        <span class="resultado-card-seta">→</span>
+                    </div>
+                </div>
+                <div class="resultado-card" onclick="abrirExplicacao('destino')">
+                    <div class="resultado-card-titulo">Número de Destino</div>
+                    <div class="resultado-card-texto">O destino mostra seu propósito de vida e as oportunidades do seu
+                        caminho.</div>
+                    <div class="resultado-card-numero">
+                        <span id="numero-destino">--</span>
+                        <span class="resultado-card-seta">→</span>
+                    </div>
+                </div>
+                <div class="resultado-card" onclick="abrirExplicacao('missao')">
+                    <div class="resultado-card-titulo">Número de Missão</div>
+                    <div class="resultado-card-texto">Sua missão traduz os aprendizados e desafios principais nessa
+                        vida.</div>
+                    <div class="resultado-card-numero">
+                        <span id="numero-missao">--</span>
+                        <span class="resultado-card-seta">→</span>
+                    </div>
+                </div>
+                <div class="resultado-card" onclick="abrirExplicacao('dividas')">
+                    <div class="resultado-card-titulo">Dívidas Cármicas</div>
+                    <div class="resultado-card-texto">As dívidas cármicas revelam padrões e ciclos repetitivos que se
+                        manifestam constantemente na sua vida.</div>
+                    <div class="resultado-card-numero">
+                        <span id="numero-dividas">--</span>
+                        <span class="resultado-card-seta">→</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal para explicação detalhada -->
+            <div id="caixa-explicacao" style="display:none;">
+                <div id="explicacao-conteudo"></div>
+                <button onclick="fecharExplicacao()">Fechar</button>
+            </div>
+        </div>
+        <script>
+            // JS EXEMPLO — preencha conforme sua lógica
+            function mostrarResultados() {
+                let nome = document.getElementById('input-field').value.trim();
+                let dataNascimento = document.getElementById('birthdate').value.trim();
+                if (!nome || !dataNascimento) {
+                    alert("Preencha o nome completo e a data de nascimento!");
+                    return;
+                }
+                // Exemplo de cálculo, adapte ao seu JS real:
+                let diaNasc = dataNascimento.split("/")[0];
+                let diaReduzido = reduzirNumero(diaNasc);
+
+                // Exemplo: Puxe os resultados dos seus cálculos (substitua por suas funções reais)
+                let expressao = 5;
+                let destino = 8;
+                let missao = 3;
+                let dividas = '14/5, 16/7';
+
+                // Triângulo e explicação:
+                let htmlTriangulo = '<table><tr><td>Exemplo Triângulo</td></tr></table>'; // substitua por sua função
+                let textoExplicacao = 'Aqui vai o texto explicativo do triângulo.';
+
+                // Preencher visual
+                document.getElementById('resultados').style.display = 'block';
+                document.getElementById('triangulo-scroll-container').innerHTML = htmlTriangulo;
+                document.getElementById('triangulo-texto').innerHTML = textoExplicacao;
+                document.getElementById('nome-usuario').textContent = nome.toLowerCase();
+                document.getElementById('numero-dia').textContent = diaReduzido;
+                document.getElementById('numero-expressao').textContent = expressao;
+                document.getElementById('numero-destino').textContent = destino;
+                document.getElementById('numero-missao').textContent = missao;
+                document.getElementById('numero-dividas').textContent = dividas;
+            }
+            function abrirExplicacao(tipo) {
+                let explicacao = '';
+                // Aqui você coloca os textos reais para cada número
+                if (tipo === 'dia') {
+                    explicacao = "Significado detalhado do seu Dia de Nascimento...";
+                }
+                if (tipo === 'expressao') {
+                    explicacao = "Significado detalhado da sua Expressão...";
+                }
+                if (tipo === 'destino') {
+                    explicacao = "Significado detalhado do seu Destino...";
+                }
+                if (tipo === 'missao') {
+                    explicacao = "Significado detalhado da sua Missão...";
+                }
+                if (tipo === 'dividas') {
+                    explicacao = "Significado detalhado das suas Dívidas Cármicas...";
+                }
+                document.getElementById('explicacao-conteudo').textContent = explicacao;
+                document.getElementById('caixa-explicacao').style.display = 'flex';
+            }
+            function fecharExplicacao() {
+                document.getElementById('caixa-explicacao').style.display = 'none';
+            }
+            // Função de reduzir número (já existia)
+            function reduzirNumero(numero) {
+                let n = Number(numero);
+                while (n > 9 && n !== 11 && n !== 22) {
+                    n = n.toString().split('').reduce((a, b) => Number(a) + Number(b), 0);
+                }
+                return n;
+            }
+        </script>
+    </body>
+    <script src="./script.js"></script>
+
+    </html>
+
+
+    <section class="venda-dobra1">
+        <div class="venda-container">
+            <h2 class="venda-headline">
+                <span class="headline-amarelo">Por que sua vida trava</span>
+                mesmo quando você faz tudo certo?
+            </h2>
+            <div class="venda-texto">
+                <p>
+                    Se você é uma pessoa que trabalha, estuda, corre atrás, dá o seu melhor…
+                    mas está cansada de se esforçar tanto <span class="texto-amarelo"><strong>e mesmo assim o dinheiro
+                            não entra e nada se mantém na sua vida…</strong></span><br>
+                </p>
+                <p>
+                    Se você não faz mal a ninguém, mas vive cercada de pessoas que só se aproveitam de você… e sua vida
+                    parece uma montanha-russa, uma hora melhora, depois tudo desaba de novo…<br>
+                </p>
+                <p>
+                    <span class="texto-amarelo"><strong>Se no amor</strong></span> você sempre se entrega, é fiel, mas
+                    só atrai decepções, mentiras e traições…
+                <p style="text-decoration: underline; text-decoration-color: #FFC300;">
+                    Existe uma energia errada agindo no seu nome. <br><br>
+                </p>
+                <p>
+                    <span class="texto-amarelo"><strong>Fique tranquila.</strong></span><br>
+                </p>
+                <p>
+                    A numerologia vai te ajudar a corrigir as energias erradas que estão bloqueando sua vida.<br>
+                </p>
+                <p>
+                    Quando você corrige o que vibra no seu nome, tudo começa a mudar: bloqueios se desfazem, a
+                    prosperidade se aproxima e você deixa de repetir os mesmos ciclos.
+
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5534996812576&text=Oi%2C+fiz+a+an%C3%A1lise+do+meu+nome+e+gostaria+de+entender+melhor.&type=phone_number&app_absent=0"
+                class="venda-btn-vermelho" target="_blank" rel="noopener">
+                Quero desbloquear minha prosperidade AGORA
+            </a>
+        </div>
+    </section>
+
+    <section class="depoimentos-dobra">
+        <h2 class="depoimentos-titulo">
+            <span class="titulo-destaque">Conheça alguns casos reais:</span><br />
+            <span class="titulo-subtitulo">Essas mulheres que tiveram suas vidas transformadas depois que fizeram o mapa
+                numerológico e seguiram as minhas orientações.</span>
+        </h2>
+
+
+        <div class="carrossel-wrapper">
+            <button class="carrossel-btn left" id="btnLeft">&#9664;</button>
+            <div class="carrossel" id="carrossel">
+                <div class="carrossel-track" id="carrosselTrack">
+                    <!-- 10 cards -->
+                    <div class="carrossel-item">
+                        <img src="./src/foto1.jpg" alt="Depoimento 1" />
+                        <!-- <p>"Excelente atendimento e resultados!"</p> -->
+                    </div>
+                    <div class="carrossel-item">
+                        <img src="./src/foto2.jpg" alt="Depoimento 2" />
+                        <!-- <p>"Recomendo muito, mudou minha vida."</p> -->
+                    </div>
+                    <div class="carrossel-item">
+                        <img src="./src/foto3.jpg" alt="Depoimento 3" />
+                        <!-- <p>"Profissionalismo e confiança."</p> -->
+                    </div>
+                    <div class="carrossel-item">
+                        <img src="./src/foto4.jpg" alt="Depoimento 4" />
+                        <!-- <p>"Simplesmente sensacional!"</p> -->
+                    </div>
+                    <div class="carrossel-item">
+                        <img src="./src/foto5.jpg" alt="Depoimento 5" />
+                        <!-- <p>"Superou minhas expectativas."</p> -->
+                    </div>
+                    <div class="carrossel-item">
+                        <img src="./src/foto6.jpg" alt="Depoimento 6" />
+                        <!-- <p>"Atendimento impecável."</p> -->
+                    </div>
+                    <div class="carrossel-item">
+                        <img src="./src/foto7.jpg" alt="Depoimento 7" />
+                        <!-- <p>"Confiança e credibilidade."</p> -->
+                    </div>
+                    <div class="carrossel-item">
+                        <img src="./src/foto8.jpg" alt="Depoimento 8" />
+                        <!-- <p>"Mudou minha vida para melhor."</p> -->
+                    </div>
+                    <div class="carrossel-item">
+                        <img src="./src/foto9.jpg" alt="Depoimento 9" />
+                        <!-- <p>"Recomendo para todos."</p> -->
+                    </div>
+                    <div class="carrossel-item">
+                        <img src="./src/foto10.jpg" alt="Depoimento 10" />
+                        <!-- <p>"Transformador e inspirador."</p> -->
+                    </div>
+                </div>
+            </div>
+            <button class="carrossel-btn right" id="btnRight">&#9654;</button>
+        </div>
+
+        </div>
+    </section>
+
+    <style>
+        .depoimentos-dobra {
+            background-color: #111;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        .depoimentos-container {
+            max-width: 530px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .depoimentos-titulo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #FFC300;
+            margin-bottom: 30px;
+        }
+
+        .carrossel-wrapper {
+            position: relative;
+        }
+
+        .carrossel {
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 10px;
+            margin: 0 40px;
+            /* espaço para as setas */
+        }
+
+        .carrossel-track {
+            display: flex;
+            gap: 16px;
+        }
+
+        .carrossel-item {
+            flex: 0 0 auto;
+            width: 750px;
+            background: #222;
+            border-radius: 8px;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .carrossel-item img {
+            width: 100%;
+            height: auto;
+            /* border-radius: 50%; */
+            margin-bottom: 12px;
+        }
+
+        .carrossel-item p {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        /* Botões setas */
+        .carrossel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #FFC300;
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #111;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+            user-select: none;
+            z-index: 10;
+        }
+
+        .carrossel-btn:hover {
+            opacity: 1;
+        }
+
+        .carrossel-btn.left {
+            left: 5px;
+        }
+
+        .carrossel-btn.right {
+            right: 5px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .carrossel-item {
+                /* width: 180px; */
+                width: 400px;
+                padding: 12px;
+            }
+
+            .depoimentos-titulo {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+
+            .carrossel {
+                margin: 0 30px;
+            }
+        }
+    </style>
+
+    <script>
+        const carrossel = document.getElementById('carrossel');
+        const btnLeft = document.getElementById('btnLeft');
+        const btnRight = document.getElementById('btnRight');
+
+        btnLeft.addEventListener('click', () => {
+            carrossel.scrollBy({
+                left: -270, // desloca para a esquerda
+                behavior: 'smooth'
+            });
+        });
+
+        btnRight.addEventListener('click', () => {
+            carrossel.scrollBy({
+                left: 270, // desloca para a direita
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+
+    <section class="codigo-nome-dobra">
+        <div class="container">
+            <h2 class="titulo-principal">O Código Escondido no Seu Nome Está na Bíblia</h2>
+            <p class="texto-explicativo">
+                A numerologia não tem nenhuma ligação com magia ou misticismo. <strong>Na verdade, é uma técnica milenar
+                    usada pelo povo de Israel,</strong> e aparece diversas vezes nas Escrituras sagradas.<br> <br>
+                Muitas pessoas já sentiram na prática a força que a numerologia tem para corrigir suas energias e <span
+                    style="border-bottom: 3px solid red; padding-bottom: 2px;">atrair prosperidade, sucesso, dinheiro e
+                    reconhecimento.</span>
+                </span><br> <br>
+                Pessoas comuns, como eu e você… e até artistas, empresários e celebridades alcançaram a fama e a
+                estabilidade depois que fizeram a correção das energias do nome.<br> <br>
+                Veja alguns exemplo:
+            </p>
+
+            <div class="cards-wrapper">
+                <div class="card">
+                    <img src="./src/carolina.jpg" alt="Carolina Dieckmann" />
+                    <h3>Carolina Dieckmann Worcman - nome verdadeiro</h3>
+                    <p>Agora <strong>"Carolina Dieckmmann"</strong> - a atriz adicionou uma letra M em seu nome em 2025
+                        após orientações de um numerólogo, pra impulsionar sua carreira e reconhecimento.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./src/paolla.jpg" alt="Paolla Oliveira" />
+                    <h3>Caroline Paola Oliveira da Silva - nome verdadeiro</h3>
+                    <p>Agora <strong>"Paolla Oliveira"</strong> - a atriz adicionou um 'L' ao seu nome em 2012 após
+                        consultar um numerólogo, buscando atrair boas energias e alcançar ainda mais sucesso em sua
+                        carreira.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./src/sheron.jpg" alt="Sheron Menezzes" />
+                    <h3>Sheron Mancilha Menezes - nome verdadeiro</h3>
+                    <p>Agora <strong>"Sheron Menezzes"</strong> Em entrevista no Programa do Jô, ela disse que a
+                        numerologia ajudou na decisão. “Coloquei mais um 'z' no Menezzes porque fiz numerologia.</p>
+                </div>
+
+                <div class="card texto-somente">
+                    <h3>Assim como na bíblia:</h3>
+                    <p>Abrão ➝ Abraão — De “pai exaltado” para “pai de multidões” (Gênesis 17:5) – mudança de missão e
+                        expansão da promessa.</p>
+                    <p>Sarai ➝ Sara — De “minha princesa” para “princesa” (Gênesis 17:15) – ampliação do propósito,
+                        libertação da limitação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .codigo-nome-dobra {
+            background-color: #fff;
+            color: #222;
+            padding: 50px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .codigo-nome-dobra .container {
+            max-width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .titulo-principal {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .texto-explicativo {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #444;
+        }
+
+        .cards-wrapper {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+            max-width: 220px;
+            flex: 1 1 220px;
+            text-align: left;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: #111;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            color: #333;
+        }
+
+        /* Card que só tem texto */
+        .texto-somente h3 {
+            margin-top: 0;
+        }
+
+        .texto-somente p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 900px) {
+            .cards-wrapper {
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .card {
+                max-width: 280px;
+                flex: 1 1 280px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .titulo-principal {
+                font-size: 1.8rem;
+            }
+
+            .texto-explicativo {
+                font-size: 1rem;
+                margin-bottom: 30px;
+            }
+
+            .card {
+                max-width: 100%;
+                flex: 1 1 100%;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .card p {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+
+    <section class="assinatura-poder-card-dobra">
+        <div class="container">
+            <div class="card-impacto-preto">
+                <p>
+                    <span style="border-bottom: 3px solid red; padding-bottom: 2px;">Calma, você não vai precisar trocar
+                        nada nos seus documentos,</span>
+                    </span> e muito menos mudar de nome.
+
+
+                </p>
+                <p>
+                    O que você precisa corrigir está na forma como o seu nome vibra energeticamente.
+                </p>
+                <p> <b>Enquanto essa energia continuar desalinhada,</b> você vai seguir atraindo os mesmos
+                    problemas.<br>
+                </p>
+                <span style="border-bottom: 3px solid red; padding-bottom: 2px;">A boa notícia?</span>
+                </span> Você só precisa ajustar nas redes sociais, no seu dia a dia, em cartões de visita… só isso. Com
+                o que chamamos de <span class="texto-amarelo"><strong> Assinatura de Poder.</strong></span> <br><br>
+
+                Simples, discreto… mas poderoso o suficiente pra mudar sua vibração e desbloquear sua vida.
+
+                <a href="https://api.whatsapp.com/send/?phone=%2B5534996812576&text=Oi%2C+fiz+a+an%C3%A1lise+do+meu+nome+e+gostaria+de+entender+melhor.&type=phone_number&app_absent=0"
+                    class="btn-vermelho-cta" target="_blank" rel="noopener">QUERO DESBLOQUEAR MINHA VIDA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .assinatura-poder-card-dobra {
+            background-color: #fff;
+            padding: 60px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .assinatura-poder-card-dobra .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .card-impacto-preto {
+            background-color: #121212;
+            padding: 40px 30px 60px 30px;
+            /* espaço extra embaixo para o botão */
+            border-radius: 18px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+            color: #f0f0f0;
+            text-align: center;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            font-weight: 400;
+            border: 2px solid #bfa038;
+            /* dourado sofisticado */
+            position: relative;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card-impacto-preto:hover {
+            box-shadow: 0 20px 60px rgba(191, 160, 56, 0.8);
+        }
+
+        .card-impacto-preto strong {
+            font-weight: 900;
+            color: #bfa038;
+            /* destaque dourado */
+        }
+
+        .btn-vermelho-cta {
+            display: inline-block;
+            background: #FF2D2D;
+            color: #fff;
+            font-size: 1.13rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            border-radius: 8px;
+            box-shadow: 0 3px 16px 0 rgba(255, 45, 45, 0.13);
+            padding: 15px 40px;
+            margin: 40px auto 0 auto;
+            max-width: 410px;
+            width: 90%;
+            letter-spacing: 0.8px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.17s, box-shadow 0.15s, transform 0.13s;
+        }
+
+        .btn-vermelho-cta:hover {
+            background: #be1010;
+            box-shadow: 0 7px 26px 0 rgba(255, 45, 45, 0.18);
+            transform: translateY(-2px) scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .card-impacto-preto {
+                font-size: 1.1rem;
+                padding: 30px 20px 50px 20px;
+                border-radius: 15px;
+            }
+
+            .btn-vermelho-cta {
+                font-size: 1rem;
+                padding: 13px 30px;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+
+    <section class="quem-fara-numerologia">
+        <div class="container">
+            <div class="perfil-wrapper">
+                <div class="perfil-texto">
+                    <h2>Quem fará sua numerologia?</h2>
+                    <p>Sou o <strong>Prof. Jeferson</strong>, especialista em numerologia e desenvolvimento pessoal, com
+                        mais de 6 anos de experiência e 1.500 atendimentos realizados.</p>
+                    <p>Utilizo uma abordagem exclusiva, que combina técnicas avançadas e análises profundas, para
+                        desenvolver um material personalizado que trará clareza e direcionamento à sua vida.</p>
+                    <p>Com minha expertise, você terá em mãos não apenas um mapa numerológico, mas uma ferramenta
+                        poderosa para desbloquear seu verdadeiro potencial e alcançar seus objetivos de forma prática e
+                        eficiente.</p>
+                </div>
+                <div class="perfil-foto">
+                    <img src="./src/sua-foto.jpg" alt="Foto do Prof. Jeferson" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .quem-fara-numerologia {
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .quem-fara-numerologia .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .perfil-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .perfil-texto {
+            flex: 1 1 400px;
+            color: #222;
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+
+        .perfil-texto h2 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: #0275d8;
+            /* azul do botão topo */
+        }
+
+        .perfil-texto p {
+            margin-bottom: 18px;
+        }
+
+        .perfil-foto {
+            flex: 0 0 250px;
+            max-width: 250px;
+        }
+
+        .perfil-foto img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .perfil-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .perfil-texto,
+            .perfil-foto {
+                flex: none;
+                max-width: 100%;
+            }
+
+            .perfil-foto {
+                margin-top: 30px;
+                max-width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+    <!-- Seção Perguntas Frequentes -->
+    <section class="faq-dobra">
+        <div class="faq-container">
+            <h2 class="faq-title">Perguntas Frequentes</h2>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Como o mapa é entregue?
+                </button>
+                <div class="faq-answer" hidden>
+                    O mapa numerológico será enviado por email e também por WhatsApp.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Quais são as formas de pagamento?
+                </button>
+                <div class="faq-answer" hidden>
+                    Você pode adquirir o estudo à vista (pelo pix ou boleto), ou em até 12x no cartão de crédito.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Numerologia é magia? Tem a ver com religião?
+                </button>
+                <div class="faq-answer" hidden>
+                    Fique tranquilo(a). Numerologia NÃO TEM RELAÇÃO NENHUMA com religião ou magia.<br>
+                    Ela é apenas um método utilizado para ver as energias erradas que estão em seu nome.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Preciso ter algum conhecimento prévio para entender o conteúdo?
+                </button>
+                <div class="faq-answer" hidden>
+                    Não, o mapa é escrito de forma simples e acessível para todos, independente do seu nível de
+                    conhecimento sobre numerologia.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Há uma garantia?
+                </button>
+                <div class="faq-answer" hidden>
+                    Sim! Se você não estiver satisfeito, oferecemos uma garantia de reembolso total dentro de 7 dias.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Prof. Jeferson Silva – copyright 2025 Todos os direitos reservados</p>
+            <nav class="footer-links">
+                <a href="https://meumapanumerologico.com.br/politicas/" target="_blank" rel="noopener">Política de
+                    privacidade</a>
+                <a href="https://meumapanumerologico.com.br/termos/" target="_blank" rel="noopener">Termos de uso</a>
+            </nav>
+        </div>
+    </footer>
+
+    <style>
+        /* ===== FAQ ===== */
+        .faq-dobra {
+            background-color: #000;
+            padding: 60px 20px;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-title {
+            font-size: 2.3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #444;
+            padding: 20px 0;
+        }
+
+        .faq-question {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            padding-right: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: "▲";
+            font-size: 0.8rem;
+            color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question[aria-expanded="true"]::after {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            color: #bbb;
+            margin-top: 12px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        /* ===== Rodapé ===== */
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 30px 20px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .footer-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .footer p {
+            margin: 0 0 12px 0;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .faq-title {
+                font-size: 1.7rem;
+                margin-bottom: 30px;
+            }
+
+            .faq-question {
+                font-size: 1rem;
+            }
+
+            .footer-links a {
+                margin: 0 8px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+
+    <script>
+        // Toggle FAQ answers on click
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const expanded = question.getAttribute('aria-expanded') === 'true';
+                question.setAttribute('aria-expanded', !expanded);
+                const answer = question.nextElementSibling;
+                if (answer) {
+                    if (expanded) {
+                        answer.hidden = true;
+                    } else {
+                        answer.hidden = false;
+                    }
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
